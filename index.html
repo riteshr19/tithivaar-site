@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tithivaar · Hindu Panchang &amp; Calendar</title>
+<meta name="description" content="Tithi, festivals, choghadiya and muhurat for the city you live in, in seven languages. Free, works offline, no account.">
+<meta name="theme-color" content="#3B2418">
+<meta property="og:title" content="Tithivaar · Hindu Panchang &amp; Calendar">
+<meta property="og:description" content="Tithi, festivals, choghadiya and muhurat for your city, in seven languages. Free and offline.">
+<meta property="og:image" content="https://tithivaar.riteshrana.engineer/img/og.jpg">
+<meta property="og:url" content="https://tithivaar.riteshrana.engineer/">
+<link rel="icon" href="img/app-icon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<!-- SHARED:icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="currentColor"/><circle cx="12" cy="9.5" r="2.6" fill="#fff"/></symbol>
+  <symbol id="i-sig" viewBox="0 0 24 24"><path d="M2 20h3v-4H2zM7 20h3v-8H7zM12 20h3V8h-3zM17 20h3V4h-3z" fill="currentColor"/></symbol>
+  <symbol id="i-bat" viewBox="0 0 28 14"><rect x="1" y="1.5" width="22" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".5"/><rect x="3" y="3.5" width="15" height="7" rx="1.6" fill="currentColor"/><rect x="24.5" y="5" width="1.8" height="4" rx=".9" fill="currentColor" opacity=".5"/></symbol>
+</svg>
+<!-- /SHARED:icons -->
+
+<!-- SHARED:nav -->
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo-mark.png" alt="" width="30" height="30">Tithivaar</a>
+    <ul>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#day">A day with it</a></li>
+      <li><a href="#verses">Daily verse</a></li>
+      <li><a href="blog/">Learn</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-dark" href="get/">Get the app<span class="dot"><svg width="16" height="16"><use href="#i-plus"/></svg></span></a>
+  </div>
+</nav>
+<!-- /SHARED:nav -->
+
+<main id="top">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-card">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div>
+        <span class="pill on-photo">Hindu Panchang &amp; Calendar</span>
+        <h1>The Panchang, for <em>where</em> you live.</h1>
+        <p class="hero-scripts">English · हिन्दी · मराठी · ગુજરાતી · தமிழ் · తెలుగు · ಕನ್ನಡ</p>
+      </div>
+      <div class="hero-phone">
+        <div class="phone">
+          <div class="screen">
+            <div class="island"></div>
+            <div class="status"><span>9:41</span><span class="sys"><svg width="14" height="14"><use href="#i-sig"/></svg><svg width="24" height="12"><use href="#i-bat"/></svg></span></div>
+            <img class="shot" src="img/shots/home.webp" alt="Tithivaar home screen: today's tithi, nakshatra, yoga, sunrise and the current choghadiya" width="540" height="1134">
+          </div>
+        </div>
+      </div>
+      <div class="hero-side">
+        <p>Tithi, nakshatra, choghadiya, Rahu Kaal, muhurat, festivals and vrat, calculated on your phone for your city's sunrise. Free, offline, no account.</p>
+        <div class="btns">
+          <a class="btn btn-light" href="get/">Get it on Google Play<span class="dot"><svg width="16" height="16"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-glass" href="#how">See how it works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- LANGUAGES -->
+<section class="scripts" aria-label="Languages">
+  <p class="label">Fully translated into seven languages</p>
+  <div class="marquee"><div class="marquee-track" id="marquee">
+    <span>English</span><span>हिन्दी</span><span>मराठी</span><span>ગુજરાતી</span><span>தமிழ்</span><span>తెలుగు</span><span>ಕನ್ನಡ</span>
+  </div></div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="wrap center">
+    <span class="pill">How it works</span>
+    <h2 class="reveal">Four steps.<br>Every single day.</h2>
+    <p class="lead reveal">Pick your city once. Tithivaar takes it from there, from sunrise tithi to the festival next week.</p>
+  </div>
+  <div class="wrap">
+    <div class="steps">
+      <article class="step reveal">
+        <span class="k">01 / Your city</span>
+        <div class="art"><div class="rings"><i></i><i></i><i></i><b><svg width="22" height="22"><use href="#i-pin"/></svg></b></div></div>
+        <h3>Set where you are</h3>
+        <p>Choose from 16 cities across India and abroad, or let the app pick the nearest one.</p>
+      </article>
+      <article class="step reveal">
+        <span class="k">02 / Today</span>
+        <div class="art"><div class="moonrow"><span style="--m:-10px"></span><span style="--m:-5px"></span><span></span><span style="--m:5px"></span><span style="--m:10px"></span></div></div>
+        <h3>Read today's Panchang</h3>
+        <p>Tithi, nakshatra, yoga, karana, sunrise and moonrise, with the current choghadiya live.</p>
+      </article>
+      <article class="step reveal">
+        <span class="k">03 / Ahead</span>
+        <div class="art"><div class="fanned"><img src="img/fest/diwali.webp" alt=""><img src="img/fest/ganesh-chaturthi.webp" alt=""><img src="img/fest/holi-dhuleti.webp" alt=""></div></div>
+        <h3>Plan festivals and vrat</h3>
+        <p>A year of festivals, Ekadashi and Purnima, with reminders the evening before.</p>
+      </article>
+      <article class="step reveal">
+        <span class="k">04 / Practice</span>
+        <div class="art"><div class="mini-ring"><b>63<small>/ 108</small></b></div></div>
+        <h3>Chant and count</h3>
+        <p>Mantras with meanings, audio and a japa counter on your home and lock screen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATED ON YOUR PHONE -->
+<section class="section" style="padding-top:0">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="pill">Accurate for your city</span>
+      <h2>Calculated for your sunrise, not someone else's.</h2>
+      <p class="lead" style="margin-top:18px">A Panchang printed for Delhi is wrong in Dallas. Tithivaar works out the tithi at your own sunrise, the choghadiya for your day and night, and the muhurat windows in your time zone, right on your phone.</p>
+      <div class="btns">
+        <a class="btn btn-dark" href="#features">Explore features<span class="dot"><svg width="16" height="16"><use href="#i-plus"/></svg></span></a>
+        <a class="btn btn-ghost" href="#faq">Questions</a>
+      </div>
+      <div class="proof">
+        <b>0</b>
+        <div><div class="chips"><span>No account</span><span>No sign-in</span><span>Nothing sent about you</span></div></div>
+      </div>
+    </div>
+    <div class="photo-card reveal" role="img" aria-label="A temple on a river under the full moon">
+      <div class="float float-big"><small>Next Purnima</small><b>–</b></div>
+      <div class="float-stack">
+        <div class="float">Amanta or Purnimanta months, as your family follows them.</div>
+        <div class="float">Works fully offline <span class="plus">+</span></div>
+        <div class="float">Reminders the evening before <span class="plus">+</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section tint" id="features">
+  <div class="wrap center">
+    <span class="pill">Features</span>
+    <h2 class="reveal">Everything in<br>one Panchang.</h2>
+  </div>
+  <div class="wrap">
+    <div class="bento">
+      <article class="tile c4 reveal">
+        <h3>Daily Panchang</h3>
+        <p>Tithi, nakshatra, yoga with end times</p>
+        <div class="body"><img class="crop" src="img/shots/day.webp" alt="Day details screen" style="aspect-ratio:1/1.05" loading="lazy"></div>
+      </article>
+      <article class="tile c5 reveal">
+        <h3>Choghadiya, live</h3>
+        <p>Day and night periods for your city</p>
+        <div class="body">
+          <div class="chog-list">
+            <div><span><b>Labh</b> · 7:15 – 8:46 AM</span><span class="tag g">Favourable</span></div>
+            <div><span><b>Amrit</b> · 8:46 – 10:17 AM</span><span class="tag g">Now</span></div>
+            <div><span><b>Kaal</b> · 10:17 – 11:48 AM</span><span class="tag b">Avoid</span></div>
+            <div><span><b>Shubh</b> · 11:48 AM – 1:20 PM</span><span class="tag g">Favourable</span></div>
+            <div><span><b>Char</b> · 4:22 – 5:53 PM</span><span class="tag n">Neutral</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="tile c3 dark reveal">
+        <h3>Mantra &amp; japa</h3>
+        <p>Audio, meanings, a 108-bead counter</p>
+        <div class="body"><div class="japa-ring"><b>17<small>of 108</small></b></div></div>
+      </article>
+      <article class="tile c6 reveal">
+        <h3>Festivals &amp; vrat</h3>
+        <p>100+ observances to Aug 2027, with Gujarati and regional days</p>
+        <div class="body"><div class="icon-cloud" id="iconCloud"></div></div>
+      </article>
+      <article class="tile c6 reveal">
+        <h3>Home-screen widgets</h3>
+        <p>18 widgets, from today's tithi to live choghadiya</p>
+        <div class="body"><div class="widgets-row"><img src="img/widgets/today.webp" alt="Today widget" loading="lazy"><img src="img/widgets/chog.webp" alt="Choghadiya widget" loading="lazy"><img src="img/widgets/japa.webp" alt="Japa counter widget" loading="lazy"></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section" id="story">
+  <div class="wrap">
+    <div class="story">
+      <span class="pill">Why Tithivaar</span>
+      <h2 class="reveal">Made for every<br>Hindu home.</h2>
+      <p class="reveal">For the family abroad checking when Ekadashi falls, the grandparent who wants the Panchang in Gujarati, and anyone planning a puja at the right time. One app, in the language you think in.</p>
+      <div class="phone sm player reveal">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="status"><span>9:41</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div>
+          <img class="shot" src="img/shots/player.webp" alt="Gayatri Mantra player with meaning and japa count" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b>100+</b><span>Festivals and vrat, September 2026 to August 2027</span></div>
+      <div class="stat dark reveal"><b>150</b><span>Verses, one each day, from the Gita, Upanishads and saints</span></div>
+      <div class="stat reveal"><b>7</b><span>Languages, with local numerals and month names</span></div>
+      <div class="stat reveal"><b>18</b><span>Home-screen widgets, in light and dark</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DAILY VERSE -->
+<section class="section" id="verses" style="padding-top:clamp(40px,6vw,72px)">
+  <div class="wrap">
+    <div class="row-head">
+      <div><span class="pill">Daily insight</span><h2 class="reveal">A verse for every day.</h2></div>
+      <div class="verse-nav"><button type="button" id="vPrev" aria-label="Previous verses"><svg width="18" height="18"><use href="#i-left"/></svg></button><button type="button" id="vNext" aria-label="Next verses"><svg width="18" height="18"><use href="#i-right"/></svg></button></div>
+    </div>
+    <div class="verses" id="versesRow" tabindex="0" aria-label="Today's verse and the next few days"></div>
+  </div>
+</section>
+
+<!-- A DAY WITH TITHIVAAR -->
+<section class="section tint" id="day">
+  <div class="wrap center">
+    <span class="pill">A day with Tithivaar</span>
+    <h2 class="reveal">From sunrise<br>to the last mala.</h2>
+  </div>
+  <div class="wrap day">
+    <ol class="day-nav" id="dayNav">
+      <li><a href="#s1" class="on"><span class="n">01</span><span><b>Sunrise</b><small>Today's Panchang</small></span></a></li>
+      <li><a href="#s2"><span class="n">02</span><span><b>Before you begin</b><small>Choghadiya &amp; Rahu Kaal</small></span></a></li>
+      <li><a href="#s3"><span class="n">03</span><span><b>Plan the week</b><small>Calendar &amp; festivals</small></span></a></li>
+      <li><a href="#s4"><span class="n">04</span><span><b>In your language</b><small>ગુજરાતી · हिन्दी · …</small></span></a></li>
+      <li><a href="#s5"><span class="n">05</span><span><b>Evening</b><small>Mantra, japa, dark mode</small></span></a></li>
+    </ol>
+    <div class="scenes">
+      <div class="scene" id="s1" style="--img:url(img/hero.webp)">
+        <div class="phone sm"><div class="screen"><div class="island"></div><div class="status"><span>6:58</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/home.webp" alt="Today's Panchang on the home screen" loading="lazy"></div></div>
+        <p class="caption"><b>Sunrise</b>Today's tithi and what ends when, before you step out.</p>
+      </div>
+      <div class="scene" id="s2" style="--img:url(img/valley.webp)">
+        <div class="phone sm"><div class="screen"><div class="island"></div><div class="status"><span>9:12</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/chog.webp" alt="Choghadiya for the day" loading="lazy"></div></div>
+        <p class="caption"><b>Before you begin</b>Is now a good time? The choghadiya and Rahu Kaal answer at a glance.</p>
+      </div>
+      <div class="scene" id="s3" style="--img:url(img/hero.webp)">
+        <div class="phone sm"><div class="screen"><div class="island"></div><div class="status"><span>1:30</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/calendar.webp" alt="Month calendar with tithis and festivals" loading="lazy"></div></div>
+        <p class="caption"><b>Plan the week</b>Every tithi in the month, festivals marked, reminders one tap away.</p>
+      </div>
+      <div class="scene" id="s4" style="--img:url(img/valley.webp)">
+        <div class="pair">
+          <div class="phone sm"><div class="screen"><div class="island"></div><div class="status"><span>5:05</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/home_gu.webp" alt="Home screen in Gujarati" loading="lazy"></div></div>
+          <div class="phone sm"><div class="screen"><div class="island"></div><div class="status"><span>5:05</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/fest_hi.webp" alt="Festivals in Hindi" loading="lazy"></div></div>
+        </div>
+        <p class="caption"><b>In your language</b>Every screen, festival name and number, in seven languages.</p>
+      </div>
+      <div class="scene" id="s5" style="--img:url(img/night.webp)">
+        <div class="phone sm dark"><div class="screen"><div class="island"></div><div class="status"><span>8:40</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/home_dark.webp" alt="Home screen in dark mode" loading="lazy"></div></div>
+        <p class="caption"><b>Evening</b>A calm dark mode, the mantra player and your japa count.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="section" id="promise">
+  <div class="wrap center">
+    <span class="pill">Our promise</span>
+    <h2 class="reveal">Free. Private. Offline.</h2>
+    <p class="lead reveal">No subscriptions and no paywall. Every feature is in the free app.</p>
+  </div>
+  <div class="wrap plans">
+    <div class="plan reveal">
+      <div class="top"><h3>Free for everyone</h3><b>₹0</b><p>Every feature, every language. Supported by clearly labelled ads.</p></div>
+      <ul><li>Full Panchang and choghadiya</li><li>Festivals, vrat and reminders</li><li>All 18 widgets</li></ul>
+      <a class="btn btn-dark" href="get/">Get the app</a>
+    </div>
+    <div class="plan hi reveal">
+      <div class="top"><span class="badge">Most important</span><h3>Private by design</h3><b>0 data</b><p>No account and no sign-in. Your city, reminders and saved days never leave your phone.</p></div>
+      <ul><li>Calculated on your phone</li><li>Coarse location only, only if you ask</li><li>Personalised ads off by default</li></ul>
+      <a class="btn btn-light" href="privacy.html">Read the privacy policy</a>
+    </div>
+    <div class="plan reveal">
+      <div class="top"><h3>Works offline</h3><b>No signal?</b><p>Everything works without internet, from the calendar to the mantra audio.</p></div>
+      <ul><li>Festival data updates when online</li><li>Updates are signed and verified</li><li>Small and fast on any phone</li></ul>
+      <a class="btn btn-dark" href="#faq">How updates work</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section tint" id="faq">
+  <div class="wrap center">
+    <span class="pill">FAQ</span>
+    <h2 class="reveal">Frequently asked.</h2>
+  </div>
+  <div class="wrap faq">
+    <div class="faq-col">
+      <details open><summary>Is Tithivaar really free?</summary><p>Yes. Every feature is free. The app shows a few ads, always labelled “Ad”, and personalised ads stay off unless you turn them on.</p></details>
+      <details><summary>Which cities does it support?</summary><p>16 cities: Ahmedabad, Mumbai, New Delhi, Varanasi, Kolkata, Chennai, Bengaluru, Dallas, Houston, New York, San Francisco, Toronto, London, Dubai, Singapore and Sydney. “Use current location” picks the nearest one.</p></details>
+      <details><summary>Amanta or Purnimanta?</summary><p>Both. Choose the month system your family follows in Settings. Festivals fall on the same day either way; only month names around the full moon differ.</p></details>
+      <details><summary>Where do festival dates come from?</summary><p>They follow a reference calendar (Drik Panchang, New Delhi) for September 2026 to August 2027, with vrat days computed for your city. Local observance can sometimes differ by a day.</p></details>
+    </div>
+    <div class="faq-col">
+      <details><summary>Does it need the internet?</summary><p>No. The Panchang is calculated on your phone. When online, the app fetches small, signed updates to festival and holiday data.</p></details>
+      <details><summary>Is my data private?</summary><p>There is no account and nothing about you is sent to us. Your settings and reminders stay on your phone. See the <a href="privacy.html">privacy policy</a>.</p></details>
+      <details><summary>Can I count japa from the lock screen?</summary><p>Yes. Turn on the lock-screen counter in the mantra player, or add the Japa tile to Quick Settings. There's also a Japa widget for the home screen.</p></details>
+      <details><summary>Is there an iPhone version?</summary><p>Not yet. Tithivaar is on Android (Google Play) for now.</p></details>
+    </div>
+  </div>
+  <p class="faq-foot">Still wondering? <a href="https://github.com/riteshr19/tithivaar/issues">Ask us on GitHub</a></p>
+</section>
+
+<!-- COMING UP -->
+<section class="section" id="upcoming">
+  <div class="wrap">
+    <div class="row-head">
+      <div><span class="pill">Coming up</span><h2 class="reveal">The next festivals.</h2></div>
+      <a class="btn btn-dark" href="get/">See all in the app<span class="dot"><svg width="16" height="16"><use href="#i-plus"/></svg></span></a>
+    </div>
+    <div class="fests" id="fests"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- SHARED:final -->
+<section class="final" aria-label="Get the app">
+  <span class="pill">Hindu Panchang &amp; Calendar</span>
+  <h2>Your Panchang<br>starts right here.</h2>
+  <div class="btns">
+    <a class="btn btn-light" href="get/">Get it on Google Play<span class="dot"><svg width="16" height="16"><use href="#i-arrow"/></svg></span></a>
+    <a class="btn btn-glass" href="#features">See the features</a>
+  </div>
+  <div class="phone sm">
+    <div class="screen"><div class="island"></div><div class="status"><span>9:41</span><span class="sys"><svg width="13" height="13"><use href="#i-sig"/></svg><svg width="22" height="11"><use href="#i-bat"/></svg></span></div><img class="shot" src="img/shots/festivals.webp" alt="Festivals screen" loading="lazy"></div>
+  </div>
+  <footer class="footer">
+    <div class="cols">
+      <div class="about">
+        <a class="brand" href="#top"><img src="img/logo-mark.png" alt="" width="30" height="30">Tithivaar</a>
+        <p>Tithi, festivals, choghadiya and muhurat for the city you live in, in seven languages. Free and offline.</p>
+      </div>
+      <div><h4>App</h4><ul><li><a href="get/">Google Play</a></li><li><a href="#features">Features</a></li><li><a href="#verses">Daily verse</a></li><li><a href="blog/">Learn</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="https://github.com/riteshr19/tithivaar/issues">Contact</a></li></ul></div>
+    </div>
+    <div class="base"><span>© <span id="year">2026</span> Tithivaar</span><span>Festival dates follow a reference calendar; local observance can differ by a day.</span></div>
+  </footer>
+  <div class="watermark" aria-hidden="true">Tithivaar</div>
+</section>
+<!-- /SHARED:final -->
+
+<script src="site.js" defer></script>
+</body>
+</html>

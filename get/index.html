@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Tithivaar</title>
+<meta name="description" content="Tithivaar: Hindu Panchang & Calendar for your city, in 7 languages. Free on Google Play.">
+<meta property="og:title" content="Tithivaar · Hindu Panchang & Calendar">
+<meta property="og:description" content="Tithi, festivals, muhurat and choghadiya for your city, in 7 languages. Free, works offline.">
+<meta property="og:url" content="https://tithivaar.riteshrana.engineer/get">
+<style>
+  :root { --bg:#FCF8F2; --tx:#241A15; --tx2:#6E6056; --sad:#B94A13; --onp:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#17120F; --tx:#F5E8D5; --tx2:#BDAB97; --sad:#E6A06A; --onp:#17120F; } }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); color:var(--tx); font:16px/1.5 system-ui, sans-serif; text-align:center; padding:16px; box-sizing:border-box; }
+  a.cta { display:inline-block; margin-top:18px; padding:14px 22px; border-radius:26px; background:var(--sad); color:var(--onp); font-weight:600; text-decoration:none; }
+  p { color:var(--tx2); }
+</style>
+</head>
+<body>
+<main>
+  <div style="font-size:40px" aria-hidden="true">🪷</div>
+  <h1 style="margin:8px 0 0">Tithivaar</h1>
+  <p>Hindu Panchang &amp; Calendar · તિથિવાર · तिथिवार</p>
+  <a class="cta" id="play" href="https://play.google.com/store/apps/details?id=app.tithivaar&amp;referrer=utm_source%3Dshare%26utm_medium%3Dapp">Get it on Google Play</a>
+</main>
+<script>
+  // Android visitors go straight to the Play Store listing; everyone else sees this page.
+  if (/Android/i.test(navigator.userAgent)) location.replace(document.getElementById('play').href);
+</script>
+</body>
+</html>
